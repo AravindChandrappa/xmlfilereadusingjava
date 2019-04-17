@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+<bean id="home" class="com.xwork.spring.Home"></bean>
+<bean id="home1" class="com.xwork.spring.Home">
+<!-- constructor way -->
+<constructor-arg value="10"></constructor-arg>
+<constructor-arg value="brojdns"></constructor-arg>
+
+<!--propety way-->
+<property name="name" value="om's home"></property>
+<property name="doorNo" value="204"></property>
+
+</bean>
+
+ <bean id="integer" class="java.lang.Integer">
+<constructor-arg value="arsc"></constructor-arg> 											</bean>
+<bean id="double" class="java.lang.Double"></bean>
+ 
+ </beans>
